@@ -3,14 +3,16 @@
 
 <asp:Content runat="server" ContentPlaceHolderID="ContentPlaceHolder1">    
 <div id="content">
-        <% foreach (SportsStore.Models.Product prod in GetProducts())
-           {
-               Response.Write("<div class='item'>");
-                Response.Write(string.Format("<h3>{0}</h3>", prod.Name));
-                Response.Write(prod.Description);
-                Response.Write(string.Format("<h4>{0:c}</h4>", prod.Price));
-                Response.Write("</div>");
-           } %>
+        <asp:Repeater runat="server" ItemType="SportsStore.Models.Product" SelectMethod="GetProducts">
+            <ItemTemplate>
+                <div class="item">
+                    <h3><%# Item.Name %></h3>
+                    <%# Item.Description %>
+                    <h4><%# Item.Price.ToString("c") %></h4>
+                    <button name="add" type="submit" value="<%# Item.ProductID %>">Add to Cart</button>
+                </div>
+            </ItemTemplate>
+        </asp:Repeater>
     </div>
     <div class="pager">
         <% for (int i = 1; i <= MaxPage; i++)
