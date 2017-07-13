@@ -32,7 +32,6 @@ H:\aspnet\sportsstore\SportsStore\SportsStore\bin\Microsoft.AI.DependencyCollect
 H:\aspnet\sportsstore\SportsStore\SportsStore\bin\Microsoft.AI.ServerTelemetryChannel.xml
 H:\aspnet\sportsstore\SportsStore\SportsStore\bin\Microsoft.AI.Web.xml
 H:\aspnet\sportsstore\SportsStore\SportsStore\bin\Microsoft.AI.WindowsServer.xml
-H:\aspnet\sportsstore\SportsStore\SportsStore\bin\EntityFramework.dll
 H:\aspnet\sportsstore\SportsStore\SportsStore\bin\EntityFramework.SqlServer.dll
 H:\aspnet\sportsstore\SportsStore\SportsStore\bin\EntityFramework.xml
 H:\aspnet\sportsstore\SportsStore\SportsStore\bin\EntityFramework.SqlServer.xml
