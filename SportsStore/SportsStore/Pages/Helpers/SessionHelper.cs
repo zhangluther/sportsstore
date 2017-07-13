@@ -5,7 +5,7 @@ using System.Web;
 using SportsStore.Models;
 using System.Web.SessionState;
 
-namespace SportsStore.Models.Helpers
+namespace SportsStore.Pages.Helpers
 {
     public enum SessionKey
     {
