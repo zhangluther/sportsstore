@@ -4,13 +4,14 @@
     <div id="checkoutForm" class="checkout" runat="server">
         <h2>Checkout Now</h2>
         Please enter your details
-        <div id="errors">
+        <div id="errors" data-valmsg-summary="true">
+            <ul><li style="display:none"></li></ul>
             <asp:ValidationSummary runat="server"/>
         </div>
         <h3>Ship to</h3>
         <div>
             <label for="name">Name: </label>
-            <input id="name" name="name"/>
+            <input id="name" name="name" data-val="true" data-val-required="Enter a name"/>
         </div>
         
         <h3>Address</h3>
